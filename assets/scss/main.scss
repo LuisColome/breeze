@@ -29,6 +29,9 @@
 @use "components/blocks-plugins/genesis-simple-faq";
 @use "components/blocks-plugins/genesis-blocks";
 
+// -- Blocks Custom
+@use "components/blocks-custom/home-custom";
+
 // Layouts
 @use "layouts/layout";
 @use "layouts/archive";
