@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: local('Avenir Next LT Pro'), local('AvenirNextLTPro'),
+        url('/wp-content/themes/breeze/assets/fonts/AvenirNextLTPro.woff2') format('woff2'),
+        url('/wp-content/themes/breeze/assets/fonts/AvenirNextLTPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: local('Avenir Next LT Pro Light'), local('AvenirNextLTPro-Light'),
+        url('/wp-content/themes/breeze/assets/fonts/AvenirNextLTPro-Light.woff2') format('woff2'),
+        url('/wp-content/themes/breeze/assets/fonts/AvenirNextLTPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: local('Avenir Next LT Pro Light Italic'), local('AvenirNextLTPro-LightItalic'),
+        url('/wp-content/themes/breeze/assets/fonts/AvenirNextLTPro-LightItalic.woff2') format('woff2'),
+        url('/wp-content/themes/breeze/assets/fonts/AvenirNextLTPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: local('Avenir Next LT Pro Bold'), local('AvenirNextLTPro-Bold'),
+        url('/wp-content/themes/breeze/assets/fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('/wp-content/themes/breeze/assets/fonts/AvenirNextLTPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
