@@ -1,31 +1,29 @@
 // Colors
 $white: #ffffff;
 $grey_1: #fafafa;
-$grey_2: #f2f3f8;
+$grey_2: #f9f9f9;
 $grey_3: #eeeeee;
 $grey_4: #e0e0e0;
 $grey_5: #bdbdbd;
 $grey_6: #9e9e9e;
 $grey_7: #757575;
 $grey_8: #616161;
-$grey_9: #414243;
+$grey_9: #383838;
 $grey_10: #212223;
 $black: #000;
 
 // Brand Colors
 $brand_colors: (
-    'green'   : #29a39b,
-	'dark-green': #1b7e90,
-    'light-green' : #add7d3,
-    'orange' : #de8974,
-	'grey'	: $grey_2,
+    'blue'   : #1C73E9,
+    'yellow' : #FCCE2C,
+	'grey' : $grey_2,
     'dark-grey' : $grey_8,
 );
 
 // color variables
-$primary-color: #35b3ab;
-$secondary-color: #de8974;
-$base-color: $grey_8;
+$primary-color: #1C73E9;
+$secondary-color: #3f86eb;
+$base-color: $grey_9;
 $highlight: #1b7e90;
 $border-color: $grey_4;
 

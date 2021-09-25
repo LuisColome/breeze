@@ -28,7 +28,7 @@
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 1.2;
-			padding: .5em 1em;
+			padding: .4em 1em;
             margin-right: .7em;
 			position: relative;
 			text-decoration: none;
@@ -59,7 +59,7 @@
                 display: block;
                 width: 0;
                 height: 2px;
-                background: brand-color('green');
+                background: brand-color('blue');
                 transition: width .3s;
                 margin-top: 5px;
             }
@@ -68,10 +68,11 @@
         &.highlight {
                 
             a {
-                margin-top: 3px;
-                border: 2px solid $primary-color;
-                border-radius: $border-radius;
-                color: $primary-color;
+                margin-top: 5px;
+                background-color: $primary-color;
+                color: $white;
+                border-radius: 100px;
+                padding: .4em 1.2em;
 
                 @include media('<=mobile_menu') {
                     text-align: center;
@@ -80,8 +81,7 @@
                 
                 &:hover,
                 &:focus {
-                    background-color: $primary-color;
-                    color: $white;
+                    background-color: $secondary-color;
                 }
 
                 span {
@@ -99,7 +99,7 @@
         .current-menu-item > a,
         .sub-menu .current-menu-item > a:focus,
         .sub-menu .current-menu-item > a:hover {
-          // color: brand-color( 'dark-green' );
+          // color: brand-color( 'blue' );
           text-decoration: none;
       
           span::after {
