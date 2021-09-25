@@ -4,7 +4,7 @@
  *
  * @package      Breeze
  * @author       Luis Colomé
- * @since        1.0.0
+ * @since        0.9.0
  * @license      GPL-2.0+
 **/
 
@@ -14,7 +14,7 @@
 *
 * If there is a theme in the repo with the same name, this prevents WP from prompting an update.
 *
-* @since  1.0.0
+* @since  0.9.0
 * @author Bill Erickson
 * @link   http://www.billerickson.net/excluding-theme-from-updates
 * @param  array $r Existing request arguments

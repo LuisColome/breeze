@@ -4,7 +4,7 @@
  *
  * @package White River
  * @author       Luis Colomé
- * @since        1.0.0
+ * @since        0.9.0
  * @license      GPL-2.0+
 **/
 

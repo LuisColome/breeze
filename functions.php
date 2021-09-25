@@ -20,7 +20,7 @@ if ( ! isset( $content_width ) )
  /**
  * Global enqueues
  *
- * @since  1.0.0
+ * @since  0.9.0
  * @global array $wp_styles
  */
 function lcm_global_enqueues() {
@@ -189,7 +189,7 @@ add_action( 'genesis_setup', 'ea_child_theme_setup', 15 );
 /**
  * Change the comment area text
  *
- * @since  1.0.0
+ * @since  0.9.0
  * @param  array $args
  * @return array
  */

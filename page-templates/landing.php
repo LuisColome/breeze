@@ -16,7 +16,7 @@ add_filter( 'body_class', 'genesis_sample_landing_body_class' );
 /**
  * Adds landing page body class.
  *
- * @since 1.0.0
+ * @since 0.9.0
  *
  * @param array $classes Original body classes.
  * @return array Modified body classes.
@@ -35,7 +35,7 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_dequeue_skip_links' );
 /**
  * Dequeues Skip Links Script.
  *
- * @since 1.0.0
+ * @since 0.9.0
  */
 function genesis_sample_dequeue_skip_links() {
 
