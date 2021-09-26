@@ -79,6 +79,7 @@ function ea_child_theme_setup() {
 	include_once( get_stylesheet_directory() . '/inc/markup.php' );
 	include_once( get_stylesheet_directory() . '/inc/template-tags.php' );
 	include_once( get_stylesheet_directory() . '/inc/helper-functions.php' );
+	include_once( get_stylesheet_directory() . '/inc/site-logo.php' );
 
     // Plugin Support
 	include_once( get_stylesheet_directory() . '/inc/acf.php' );
