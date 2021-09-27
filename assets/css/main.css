@@ -1307,11 +1307,11 @@ hr::before {
   position: relative;
   z-index: 9;
   padding: 0;
-  max-width: 300px;
+  max-width: clamp(85px, 130px + 5vw, 180px);
   transition: all 0.2s ease-in-out;
 }
-.wp-custom-logo .shrink .title-area {
-  max-width: calc(300px/1.5);
+.wp-custom-logo .shrink .title-area, .shrink .title-area {
+  max-width: calc(clamp(85px, 130px + 5vw, 180px)/1.5);
 }
 
 .site-title {
@@ -1329,6 +1329,9 @@ hr::before {
 .site-title a:hover {
   color: #616161;
   text-decoration: none;
+}
+.site-title__image {
+  border-radius: 0;
 }
 
 .site-description,
