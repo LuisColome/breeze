@@ -1552,9 +1552,11 @@ hr::before {
   opacity: 0;
   z-index: 996;
   transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
 }
 .lcm-dark-overlay.active {
   opacity: 1;
+  pointer-events: visible;
 }
 
 /* Toggles

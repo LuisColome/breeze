@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/0.9.0/) 
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (or at least I'll try to).
 
 
+#### [0.9.5](https://github.com/LuisColome/breeze/releases/tag/v0.9.5) - 2021-09-27
+#### Fix
+- Custom nav menu to close when click outside of it.
 
 #### [0.9.4](https://github.com/LuisColome/breeze/releases/tag/v0.9.4) - 2021-09-27
 #### Fix

@@ -1,6 +1,6 @@
 # Breeze - Genesis Child Theme 
 
-[![Breeze Genesis Theme v0.9.4 badge][changelog-badge]][changelog]  [![Version 0.9.4 Badge][version-badge]][changelog]  [![Last commit badge][last-commit]][last-commit-link]
+[![Breeze Genesis Theme v0.9.5 badge][changelog-badge]][changelog]  [![Version 0.9.5 Badge][version-badge]][changelog]  [![Last commit badge][last-commit]][last-commit-link]
 
 ![Breeze Screenshot](screenshot.png)
 
@@ -41,7 +41,7 @@ Without these projects, this WordPress Genesis Child Theme wouldn't be where it 
 
 
 [changelog]: ./CHANGELOG.md
-[changelog-badge]: https://img.shields.io/badge/Changelog-Breeze%20Genesis%20Theme%20v0.9.4-orange
-[version-badge]: https://img.shields.io/badge/version-0.9.4-informational.svg
+[changelog-badge]: https://img.shields.io/badge/Changelog-Breeze%20Genesis%20Theme%20v0.9.5-orange
+[version-badge]: https://img.shields.io/badge/version-0.9.5-informational.svg
 [last-commit]: https://img.shields.io/github/last-commit/luiscolome/breeze?color=yellow&logoColor=red
 [last-commit-link]: https://github.com/LuisColome/breeze/commits
