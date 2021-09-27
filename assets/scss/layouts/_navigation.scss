@@ -214,8 +214,13 @@
     &__logo {
         width: 125px;
         height: 25px;
-        opacity: .8;
+        opacity: 0;
         text-indent: -9999px;
+        transition: all .35s .15s ease-in-out;
+    }
+
+    .nav-menu.active &__logo {
+        opacity: .8;
     }
 
     .shrink & {
@@ -238,7 +243,7 @@
     opacity: 0;
     z-index: 996;
     transition: opacity .3s ease-in-out;
-    pointer-events: none;
+    // pointer-events: none;
 
     // @include media('>tablet') {
     //     visibility: hidden;

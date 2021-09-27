@@ -1527,8 +1527,12 @@ hr::before {
 .nav-header__logo {
   width: 125px;
   height: 25px;
-  opacity: 0.8;
+  opacity: 0;
   text-indent: -9999px;
+  transition: all 0.35s 0.15s ease-in-out;
+}
+.nav-menu.active .nav-header__logo {
+  opacity: 0.8;
 }
 .shrink .nav-header {
   height: 50px;
@@ -1548,7 +1552,6 @@ hr::before {
   opacity: 0;
   z-index: 996;
   transition: opacity 0.3s ease-in-out;
-  pointer-events: none;
 }
 .lcm-dark-overlay.active {
   opacity: 1;

@@ -52,7 +52,12 @@ jQuery(function($){
 		$('body').toggleClass('noscroll');
         // $('body').css('top', -(document.documentElement.scrollTop) + 'px')
         //  .toggleClass('noscroll');
+    
 	});
+    $('.lcm-dark-overlay').click(function() {
+        $('.menu-toggle, .nav-menu, .lcm-dark-overlay').removeClass('active');
+     });
+    
 	$('.menu-item-has-children > .submenu-expand').click(function(e){
 		$(this).toggleClass('expanded');
 		e.preventDefault();
