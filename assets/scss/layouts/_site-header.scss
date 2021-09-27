@@ -51,12 +51,14 @@
 --------------------------------------------- */
 
 @include media(">medium" ) {
+
 	.admin-bar { 
     .site-container {
-		  margin-top: 32px;
+		margin-top: 32px;
     }
+
     .site-header {
-      top: 32px;
+        top: 32px;
     }
   }
 }
@@ -72,43 +74,48 @@
   --------------------------------------------- */
   
 .title-area {
-  position: relative;
-  z-index: 9; // make the site title,visible when menu is active
-  padding: 0;
-  max-width: $logo-width;
-  @include transition;
+    position: relative;
+    z-index: 9; // make the site title,visible when menu is active
+    padding: 0;
+    max-width: $logo-width;
+    @include transition;
 
-  .wp-custom-logo .shrink & {
-      max-width: calc(#{$logo-width}/1.5);
-  }
+    .wp-custom-logo .shrink &,
+    .shrink & {
+        max-width: calc(#{$logo-width}/1.5);
+    }
 }
 
 .site-title {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1;
-  margin: 0;
-  overflow: hidden;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
 
-  .wp-custom-logo & {
-      text-indent: -9999;
-  }
+    .wp-custom-logo & {
+        text-indent: -9999;
+    }
 
-  a,
-  a:focus,
-  a:hover {
-    color: $grey_8;
-    text-decoration: none;
-  }
+    a,
+    a:focus,
+    a:hover {
+        color: $grey_8;
+        text-decoration: none;
+    }
+
+    &__image {
+        border-radius: 0;
+    }
 }
   
 .site-description,
 .wp-custom-logo .site-title {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  width: 1px;
-  word-wrap: normal !important;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
 }
