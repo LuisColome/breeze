@@ -212,9 +212,9 @@
     @include transition;
 
     &__logo {
-        display: none;
-        width: 50px;
-        height: 50px;
+        width: 125px;
+        height: 25px;
+        opacity: .8;
         text-indent: -9999px;
     }
 
