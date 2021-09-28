@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/0.9.0/) ([Spanish version](https://keepachangelog.com/es-ES/0.9.0/)),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (or at least I'll try to).
 
+#### [0.9.6](https://github.com/LuisColome/breeze/releases/tag/v0.9.6) - 2021-09-28
+#### Fix
+- Updated main logo with no space around it
+- Fixed header with no shrink effect.
+#### Remove
+- AvenirNextLt Pro fonts.
+#### Add
+- Metropolis free typography.
 
 #### [0.9.5](https://github.com/LuisColome/breeze/releases/tag/v0.9.5) - 2021-09-27
 #### Fix
