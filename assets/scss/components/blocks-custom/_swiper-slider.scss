@@ -1,0 +1,16 @@
+// Swiper Slider for Centers
+@use "abstracts" as *;
+
+.lcm-center {
+    margin: $block-margin 0 $margin_4x;
+    
+    &__title {
+        font-size: 18px;
+        margin: 16px 0;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+        }
+    }
+}

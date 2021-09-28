@@ -993,6 +993,18 @@ hr::before {
   max-width: 590px;
 }
 
+.lcm-center {
+  margin: 20px 0 4.4rem;
+}
+.lcm-center__title {
+  font-size: 18px;
+  margin: 16px 0;
+}
+.lcm-center__title a {
+  text-decoration: none;
+  color: #1C73E9;
+}
+
 /* Structure and Layout
 ----------------------------------------------------------------------------- */
 /* Site Container
