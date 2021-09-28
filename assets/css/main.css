@@ -1260,7 +1260,7 @@ hr::before {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 75px;
+  height: 60px;
   background-color: #ffffff;
   padding: 0 2.2rem;
   border-bottom: 1px solid #eeeeee;
@@ -1270,11 +1270,7 @@ hr::before {
   content: none;
 }
 .site-header.shrink {
-  height: 50px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-.site-header.shrink .site-title a {
-  color: #383838;
 }
 .site-header .wrap {
   width: 100%;
@@ -1307,11 +1303,8 @@ hr::before {
   position: relative;
   z-index: 9;
   padding: 0;
-  max-width: clamp(85px, 130px + 5vw, 180px);
+  max-width: clamp(80px, 130px + 5vw, 190px);
   transition: all 0.2s ease-in-out;
-}
-.wp-custom-logo .shrink .title-area, .shrink .title-area {
-  max-width: calc(clamp(85px, 130px + 5vw, 180px)/1.5);
 }
 
 .site-title {
@@ -1518,7 +1511,7 @@ hr::before {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 75px;
+  height: 60px;
   padding-left: 20px;
   display: flex;
   align-items: center;
@@ -1533,9 +1526,6 @@ hr::before {
 }
 .nav-menu.active .nav-header__logo {
   opacity: 0.8;
-}
-.shrink .nav-header {
-  height: 50px;
 }
 
 /* Nav Header overlay layer

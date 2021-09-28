@@ -204,7 +204,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 60px;
     padding-left: 20px;
     display: flex;
     align-items: center;
@@ -223,9 +223,9 @@
         opacity: .8;
     }
 
-    .shrink & {
-        height: 50px;
-    }
+    // .shrink & {
+    //     height: 50px;
+    // }
 }
 
 /* Nav Header overlay layer
