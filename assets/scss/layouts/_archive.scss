@@ -34,28 +34,20 @@
     //     flex-flow: row;
     // }
 
-    .lcm-post__image-link img {
-        border-radius: $border-radius;
-    }
+    .lcm-post__image {
+        position: relative;
+        width: 100%;
 
-    .lcm-post__title {
-        line-height: 1;
-        margin: 0 0 $base-margin 0;
-        
-        a {
-            @include font-sizes(20px, 22px, 22px);
-            text-decoration: none;
-            color: $grey_9;
-            font-weight: 400;
-            
-            &:hover {
-                color: $primary-color;;
-            }
+        &__link img {
+            border-radius: $border-radius;
         }
     }
-
+    
     .lcm-post__category {
-        color: $grey_6;
+        position: absolute;
+        bottom: 8%;
+        left: 4%;
+        color: $white;
         font-size: 12px;
         font-weight: 400;
         text-transform: uppercase;
@@ -64,16 +56,44 @@
         a {
             color: inherit;
             text-decoration: none;
+            display: block;
+            background-color: rgba(255,255,255, .35);
+            border-radius: $border-radius;
+            padding: .15em .9em 0;
+            
+            &:hover {
+                background-color: rgba(28,115,233, .85);
+            }
         }
     }
 
-    .lcm-post__excerpt {
-        font-size: 17px;
+    .lcm-post__title {
+        line-height: 0.72;
+        margin: $base-margin / 2 0 $base-margin 0;
+        
+        a {
+            @include font-sizes(20px, 22px, 22px);
+            text-decoration: none;
+            color: $grey_9;
+            font-weight: 400;
+            
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+
+    .lcm-post__excerpt,
+    .lcm-post__content {
+        font-size: 16px;
+        margin: $base-margin 0;
     }
 
 	.lcm-post__read-more-link {
 		text-decoration: none;
-		font-size: 60%;
+		font-size: 80%;
+        font-weight: 500;
 		text-transform: uppercase;
 
 		&::after {

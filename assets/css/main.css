@@ -993,6 +993,20 @@ hr::before {
   max-width: 590px;
 }
 
+.lcm-center {
+  margin: 20px 0 4.4rem;
+}
+.lcm-center__header {
+  margin: 16px 0 0 8px;
+}
+.lcm-center__title {
+  font-size: 18px;
+}
+.lcm-center__title a {
+  text-decoration: none;
+  color: #1C73E9;
+}
+
 /* Structure and Layout
 ----------------------------------------------------------------------------- */
 /* Site Container
@@ -1156,12 +1170,37 @@ hr::before {
   display: flex;
   flex-flow: column;
 }
-.lcm-post .lcm-post__image-link img {
+.lcm-post .lcm-post__image {
+  position: relative;
+  width: 100%;
+}
+.lcm-post .lcm-post__image__link img {
   border-radius: 16px;
 }
+.lcm-post .lcm-post__category {
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0.55rem 0 0 0;
+}
+.lcm-post .lcm-post__category a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  padding: 0.15em 0.9em 0;
+}
+.lcm-post .lcm-post__category a:hover {
+  background-color: rgba(28, 115, 233, 0.85);
+}
 .lcm-post .lcm-post__title {
-  line-height: 1;
-  margin: 0 0 1.1rem 0;
+  line-height: 0.72;
+  margin: 0.55rem 0 1.1rem 0;
 }
 .lcm-post .lcm-post__title a {
   font-size: 20px;
@@ -1182,23 +1221,15 @@ hr::before {
 .lcm-post .lcm-post__title a:hover {
   color: #1C73E9;
 }
-.lcm-post .lcm-post__category {
-  color: #9e9e9e;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 0.55rem 0 0 0;
-}
-.lcm-post .lcm-post__category a {
-  color: inherit;
-  text-decoration: none;
-}
-.lcm-post .lcm-post__excerpt {
-  font-size: 17px;
+.lcm-post .lcm-post__excerpt,
+.lcm-post .lcm-post__content {
+  font-size: 16px;
+  margin: 1.1rem 0;
 }
 .lcm-post .lcm-post__read-more-link {
   text-decoration: none;
-  font-size: 60%;
+  font-size: 80%;
+  font-weight: 500;
   text-transform: uppercase;
 }
 .lcm-post .lcm-post__read-more-link::after {
@@ -1775,7 +1806,7 @@ hr::before {
 .content-width .editor-styles-wrapper > *.alignwide[class^=wp-block-kadence] {
   padding: 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .full-width-content .entry-content > *.alignwide, .content-width .entry-content > *.alignwide,
 .full-width-content .editor-styles-wrapper > *.alignwide,
 .content-width .editor-styles-wrapper > *.alignwide {
