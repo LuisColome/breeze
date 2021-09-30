@@ -15,8 +15,9 @@ $black: #000;
 // Brand Colors
 $brand_colors: (
     'blue'   : #1C73E9,
-    'yellow' : #FCCE2C,
-	'grey' : $grey_2,
+    'lighter-blue' : #3f86eb,
+	'light-grey' : $grey_2,
+	'border-grey' : $grey_4,
     'dark-grey' : $grey_8,
 );
 
@@ -24,7 +25,7 @@ $brand_colors: (
 $primary-color: #1C73E9;
 $secondary-color: #3f86eb;
 $base-color: $grey_9;
-$highlight: #1b7e90;
+$highlight: #2074eb;
 $border-color: $grey_4;
 
 // Social colors
