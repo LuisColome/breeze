@@ -183,11 +183,11 @@
 			}
 
 			&:hover > a {
-				color: $highlight;
+				color: $secondary-color;
 			}
 
 			&.active > a {
-				background: $highlight;
+				background: $secondary-color;
 				color: $white;
 				font-weight: 700;
 			}
