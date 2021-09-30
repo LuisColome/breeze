@@ -1021,6 +1021,32 @@ hr::before {
   color: #1C73E9;
 }
 
+.entry-content .canadaprovinces,
+.entry-content .canadacities {
+  padding: 1rem;
+}
+.entry-content .canadaprovinces__list,
+.entry-content .canadacities__list {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0 32px;
+}
+.entry-content .canadaprovinces__item,
+.entry-content .canadacities__item {
+  list-style: none;
+  line-height: 1.8;
+}
+.entry-content .canadaprovinces__link,
+.entry-content .canadacities__link {
+  text-decoration: none;
+}
+.entry-content .canadaprovinces__link:hover, .entry-content .canadaprovinces__link:focus,
+.entry-content .canadacities__link:hover,
+.entry-content .canadacities__link:focus {
+  text-decoration: underline;
+}
+
 /* Structure and Layout
 ----------------------------------------------------------------------------- */
 /* Site Container
