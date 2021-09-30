@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/0.9.0/) ([Spanish version](https://keepachangelog.com/es-ES/0.9.0/)),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (or at least I'll try to).
 
+#### [0.9.8](https://github.com/LuisColome/breeze/releases/tag/v0.9.8) - 2021-09-29
+#### Add
+- Support for provinces and cities custom blocks.
+#### Update
+- Content width to 1280px
+- Brand colors according to design
+- Pagination colors
+- Gutenger color palette
+- Post category meta style on archive pages.
+#### Fix 
+- Blockquote color.
+
 #### [0.9.7](https://github.com/LuisColome/breeze/releases/tag/v0.9.7) - 2021-09-29
 #### Add
 - Support for swiper slides custom block
