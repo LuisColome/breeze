@@ -15,7 +15,7 @@
  *
  */
 if ( ! isset( $content_width ) )
-	$content_width = 768;	
+	$content_width = 1280;
 
  /**
  * Global enqueues
