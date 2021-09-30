@@ -525,20 +525,28 @@ figure {
   background-color: #1C73E9;
 }
 
-.has-yellow-color {
-  color: #FCCE2C;
+.has-lighter-blue-color {
+  color: #3f86eb;
 }
 
-.has-yellow-background-color {
-  background-color: #FCCE2C;
+.has-lighter-blue-background-color {
+  background-color: #3f86eb;
 }
 
-.has-grey-color {
+.has-light-grey-color {
   color: #f9f9f9;
 }
 
-.has-grey-background-color {
+.has-light-grey-background-color {
   background-color: #f9f9f9;
+}
+
+.has-border-grey-color {
+  color: #e0e0e0;
+}
+
+.has-border-grey-background-color {
+  background-color: #e0e0e0;
 }
 
 .has-dark-grey-color {
@@ -673,17 +681,23 @@ blockquote.wp-block-quote p:last-of-type {
 .wp-block-button__link.has-blue-background-color:hover, .wp-block-button__link.has-blue-background-color:focus {
   background-color: #135cbf;
 }
-.wp-block-button__link.has-yellow-color:hover, .wp-block-button__link.has-yellow-color:focus {
-  color: #FCCE2C;
+.wp-block-button__link.has-lighter-blue-color:hover, .wp-block-button__link.has-lighter-blue-color:focus {
+  color: #3f86eb;
 }
-.wp-block-button__link.has-yellow-background-color:hover, .wp-block-button__link.has-yellow-background-color:focus {
-  background-color: #f2bd03;
+.wp-block-button__link.has-lighter-blue-background-color:hover, .wp-block-button__link.has-lighter-blue-background-color:focus {
+  background-color: #176ae0;
 }
-.wp-block-button__link.has-grey-color:hover, .wp-block-button__link.has-grey-color:focus {
+.wp-block-button__link.has-light-grey-color:hover, .wp-block-button__link.has-light-grey-color:focus {
   color: #f9f9f9;
 }
-.wp-block-button__link.has-grey-background-color:hover, .wp-block-button__link.has-grey-background-color:focus {
+.wp-block-button__link.has-light-grey-background-color:hover, .wp-block-button__link.has-light-grey-background-color:focus {
   background-color: #e0e0e0;
+}
+.wp-block-button__link.has-border-grey-color:hover, .wp-block-button__link.has-border-grey-color:focus {
+  color: #e0e0e0;
+}
+.wp-block-button__link.has-border-grey-background-color:hover, .wp-block-button__link.has-border-grey-background-color:focus {
+  background-color: #c7c7c7;
 }
 .wp-block-button__link.has-dark-grey-color:hover, .wp-block-button__link.has-dark-grey-color:focus {
   color: #616161;
@@ -932,7 +946,7 @@ hr::before {
   border-radius: 16px;
 }
 .lcm-cf7-form .lcm-cf7-form__input input:hover {
-  background-color: #1b7e90;
+  background-color: #2074eb;
 }
 .lcm-cf7-form input {
   border-radius: 16px;
@@ -1005,6 +1019,32 @@ hr::before {
 .lcm-center__title a {
   text-decoration: none;
   color: #1C73E9;
+}
+
+.entry-content .canadaprovinces,
+.entry-content .canadacities {
+  padding: 1rem;
+}
+.entry-content .canadaprovinces__list,
+.entry-content .canadacities__list {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0 32px;
+}
+.entry-content .canadaprovinces__item,
+.entry-content .canadacities__item {
+  list-style: none;
+  line-height: 1.8;
+}
+.entry-content .canadaprovinces__link,
+.entry-content .canadacities__link {
+  text-decoration: none;
+}
+.entry-content .canadaprovinces__link:hover, .entry-content .canadaprovinces__link:focus,
+.entry-content .canadacities__link:hover,
+.entry-content .canadacities__link:focus {
+  text-decoration: underline;
 }
 
 /* Structure and Layout
@@ -1179,12 +1219,13 @@ hr::before {
 }
 .lcm-post .lcm-post__category {
   position: absolute;
-  bottom: 8%;
+  bottom: 6%;
   left: 4%;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 0.4px;
   margin: 0.55rem 0 0 0;
 }
 .lcm-post .lcm-post__category a {
@@ -1308,10 +1349,10 @@ hr::before {
   width: auto;
 }
 .pagination ul li:hover > a {
-  color: #1b7e90;
+  color: #3f86eb;
 }
 .pagination ul li.active > a {
-  background: #1b7e90;
+  background: #3f86eb;
   color: #ffffff;
   font-weight: 700;
 }
@@ -1979,7 +2020,7 @@ hr::before {
   text-decoration: none;
 }
 .entry-author a:hover {
-  color: #1b7e90;
+  color: #2074eb;
 }
 
 .entry-meta {
@@ -2011,7 +2052,7 @@ hr::before {
   color: #1C73E9;
 }
 .breadcrumb a:hover {
-  color: #1b7e90;
+  color: #2074eb;
 }
 .single .breadcrumb {
   border-top: 1px solid #eeeeee;
@@ -2060,7 +2101,7 @@ hr::before {
   text-decoration: none;
 }
 .post-summary__title a:hover {
-  color: #1b7e90;
+  color: #2074eb;
 }
 
 .post-summary__image {
@@ -2084,7 +2125,7 @@ hr::before {
   text-decoration: none;
 }
 .entry-category a:hover {
-  color: #1b7e90;
+  color: #2074eb;
 }
 
 /* Entry Comments
@@ -2339,7 +2380,7 @@ textarea:focus:-ms-input-placeholder {
   height: 20px;
 }
 .search-form .search-submit svg:hover {
-  fill: #1b7e90;
+  fill: #2074eb;
 }
 
 /* Footer Widgets

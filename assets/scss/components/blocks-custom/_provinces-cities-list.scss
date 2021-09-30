@@ -1,0 +1,39 @@
+@use "../../abstracts" as *;
+@use "../../vendor/include-media" as *;
+
+.entry-content {
+
+    .canadaprovinces,
+    .canadacities {
+        padding: 1rem;
+    
+        &__list {
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
+            gap: 0 $grid-gap;
+        }
+    
+        &__item {
+            list-style: none;
+            line-height: 1.8;
+        }
+
+        &__link {
+            // font-size: 18px;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // .canadacities {
+
+    //     &__list {
+    //         grid-template-columns: 1fr 1fr 1fr;
+    //     }
+    // }
+}

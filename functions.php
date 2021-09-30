@@ -15,7 +15,7 @@
  *
  */
 if ( ! isset( $content_width ) )
-	$content_width = 768;	
+	$content_width = 1280;
 
  /**
  * Global enqueues
@@ -153,29 +153,39 @@ function ea_child_theme_setup() {
 	// -- Editor Color Palette
 	add_theme_support( 'editor-color-palette', array(
 		array(
-			'name'  => __( 'Orange', 'ea_genesis_child' ),
-			'slug'  => 'orange',
-			'color'	=> '#f36523',
+			'name'  => __( 'Blue', 'breeze' ),
+			'slug'  => 'blue',
+			'color'	=> '#1C73E9',
 		),
 		array(
-			'name'  => __( 'Yellow', 'ea_genesis_child' ),
-			'slug'  => 'yellow',
-			'color'	=> '#ffc401',
+			'name'  => __( 'Lighter blue', 'breeze' ),
+			'slug'  => 'lighter-blue',
+			'color'	=> '#3f86eb',
 		),
 		array(
-			'name'  => __( 'Grey', 'ea_genesis_child' ),
-			'slug'  => 'grey',
-			'color' => '#f2f3f8',
+			'name'  => __( 'Light grey', 'breeze' ),
+			'slug'  => 'light-grey',
+			'color' => '#f9f9f9',
 		),
 		array(
-			'name'  => __( 'Dark grey', 'ea_genesis_child' ),
+			'name'  => __( 'Border grey', 'breeze' ),
+			'slug'  => 'border-grey',
+			'color' => '#e0e0e0',
+		),
+		array(
+			'name'  => __( 'Dark grey', 'breeze' ),
 			'slug'  => 'dark-grey',
-			'color' => '#616161',
+			'color' => '#383838',
 		),
 		array(
-			'name'  => __( 'White', 'ea_genesis_child' ),
+			'name'  => __( 'White', 'breeze' ),
 			'slug'  => 'white',
 			'color' => '#ffffff',
+		),
+		array(
+			'name'  => __( 'Black', 'breeze' ),
+			'slug'  => 'black',
+			'color' => '#000000',
 		),
 	) );
 
