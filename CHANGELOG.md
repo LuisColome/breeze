@@ -21,11 +21,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for swiper slides custom block
 - Featured image sizes
 - Featured image to single posts
-- Custom blocks for categories and slider
+- Custom blocks for categories and slider.
 #### Update
 - Post archive page design
 - Large breackpoint
-- Featured image sizes
+- Featured image sizes.
 
 #### [0.9.6](https://github.com/LuisColome/breeze/releases/tag/v0.9.6) - 2021-09-28
 #### Fix
