@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Content width to 1280px
 - Brand colors according to design
 - Pagination colors
-- Gutenger color palette
+- Gutenberg color palette
 - Post category meta style on archive pages.
 #### Fix 
 - Blockquote color.
