@@ -1073,7 +1073,7 @@ hr::before {
   margin: 0 auto;
   padding: 60px 0 30px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1315px) {
   .site-inner {
     padding: 60px 1.375rem 30px;
   }
@@ -1370,9 +1370,14 @@ hr::before {
   width: 100%;
   height: 60px;
   background-color: #ffffff;
-  padding: 0 2.2rem;
+  padding: 0 1.375rem;
   border-bottom: 1px solid #eeeeee;
   transition: all 0.2s ease-in-out;
+}
+@media (min-width: 1280px) {
+  .site-header {
+    padding: 0 clamp(1.375rem, 1.2rem + 1.5vw, 3.7rem);
+  }
 }
 .site-header::before, .site-header::after {
   content: none;
