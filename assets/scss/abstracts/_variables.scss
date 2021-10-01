@@ -13,7 +13,7 @@ $border-radius: 16px;
 
 // Grid
 $grid: grid;
-$grid-width: 1280px;
+$grid-width: 1280px; // Important!! Layout based on this width. 
 $grid-gap: 32px;
 $wrap_edge: $base-margin * 1.25;
 $margin_2x: $base-margin * 2;
@@ -21,5 +21,4 @@ $margin_4x: $base-margin * 4;
 
 // Site Header
 // $logo_width: 200px;
-// $logo_width: calc(150px + 3vw);
 $logo_width: clamp(80px, 130px + 5vw, 190px);

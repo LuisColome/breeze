@@ -35,7 +35,7 @@
     margin: 0 auto;
     padding: 60px 0 30px;
 
-    @include media("<=1200px") {
+    @include media("<=1280px") {
         padding: 60px $wrap_edge 30px;
     }
 
@@ -53,7 +53,7 @@
 .sidebar-content {
 
     .site-inner {
-        max-width: 1200px;
+        max-width: $grid-width;
     }
 
     .content-area {
@@ -64,7 +64,7 @@
 }
 
 .full-width-content .site-main {
-    max-width: 1200px;
+    max-width: $grid-width;
     margin: 0 auto;
 }
 

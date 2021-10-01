@@ -1072,7 +1072,7 @@ hr::before {
   margin: 0 auto;
   padding: 60px 0 30px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .site-inner {
     padding: 60px 1.375rem 30px;
   }
@@ -1083,7 +1083,7 @@ hr::before {
 
 .content-sidebar .site-inner,
 .sidebar-content .site-inner {
-  max-width: 1200px;
+  max-width: 1280px;
 }
 .content-sidebar .content-area,
 .sidebar-content .content-area {
@@ -1093,7 +1093,7 @@ hr::before {
 }
 
 .full-width-content .site-main {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
