@@ -1015,6 +1015,7 @@ hr::before {
 }
 .lcm-center__title {
   font-size: 18px;
+  margin: 10px 0;
 }
 .lcm-center__title a {
   text-decoration: none;
