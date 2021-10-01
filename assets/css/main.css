@@ -640,7 +640,7 @@ blockquote.wp-block-quote p:last-of-type {
 --------------------------------------------- */
 .wp-block-button__link {
   border: 2px solid #1C73E9;
-  border-radius: 3px;
+  border-radius: 100px;
   font-size: 20px;
   font-weight: 700;
   line-height: 32px;
