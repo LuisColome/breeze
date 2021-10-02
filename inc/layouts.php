@@ -18,6 +18,11 @@ genesis_unregister_layout( 'sidebar-sidebar-content' );
 // Add new layouts
 genesis_register_layout( 'content-width', [ 'label' => __( 'Content Width', 'ea_genesis_child' ), ] );
 
+// Function to force Content-width layout - https://my.studiopress.com/documentation/snippets/admin-management/force-the-genesis-layout-settings/
+function __genesis_return_content_width() {
+    return 'content-width';
+}
+
 // Remove layout metabox
 //remove_theme_support( 'genesis-inpost-layouts' );
 remove_theme_support( 'genesis-archive-layouts' );
