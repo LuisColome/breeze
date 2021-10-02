@@ -1,5 +1,4 @@
 <?php 
-
 /**
  * Archive partial
  *
@@ -11,7 +10,7 @@
 
 echo '<article class="lcm-post">'; 
 
-    echo '<figure class="lcm-post__image"';
+    echo '<figure class="lcm-post__image">';
 	    echo '<a class="lcm-post__image__link" href="' . get_permalink() . '" tabindex="-1" aria-hidden="true">' . get_the_post_thumbnail( get_the_ID(), 'lcm-center-featured' ) . '</a>';
         ea_entry_category();
     echo '</figure>';
