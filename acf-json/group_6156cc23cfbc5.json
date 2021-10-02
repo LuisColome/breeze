@@ -7,7 +7,7 @@
             "label": "Specialties",
             "name": "br-specialties",
             "type": "select",
-            "instructions": "",
+            "instructions": "Please select the specialty for which you want the Centers to be displayed.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -21,7 +21,7 @@
                 "mental-health": "Mental health"
             },
             "default_value": false,
-            "allow_null": 1,
+            "allow_null": 0,
             "multiple": 0,
             "ui": 0,
             "return_format": "value",
@@ -33,7 +33,7 @@
             "label": "Provinces",
             "name": "br-provinces",
             "type": "select",
-            "instructions": "",
+            "instructions": "This argument is NOT required. Although, if no province is selected, all items from the first argument (specialties) will be displayed.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -71,5 +71,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1633080655
+    "modified": 1633162031
 }
