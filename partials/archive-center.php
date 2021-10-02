@@ -11,7 +11,11 @@
 
 echo '<article class="lcm-center">'; 
 
-	echo '<a class="lcm-center__image-link" href="' . get_permalink() . '" tabindex="-1" aria-hidden="true">' . get_the_post_thumbnail( get_the_ID(), 'lcm-center-featured' ) . '</a>';
+    if( has_post_thumbnail() ) {
+	    echo '<a class="lcm-center__image-link" href="' . get_permalink() . '" tabindex="-1" aria-hidden="true">' . get_the_post_thumbnail( get_the_ID(), 'lcm-center-featured' ) . '</a>';
+    }else{
+        echo '<a class="lcm-center__image-link" href="' . get_permalink() . '" tabindex="-1" aria-hidden="true"><img class="br__img fallback__imgage" src="/wp-content/uploads/fallback-image-768x512.jpg" alt="BestRehabs"></a>';
+    }
 
 	echo '<header class="lcm-center__header">';
 		// $categories = get_the_category();
