@@ -17,6 +17,9 @@ remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 // Remove default image
 remove_action( 'genesis_entry_header', 'genesis_do_post_format_image', 4 );
 
+// Remove the comments.
+remove_action( 'genesis_after_entry', 'genesis_get_comments_template' );
+
 /**
  * Add class to the Genesis header
  * @since 0.9.8
