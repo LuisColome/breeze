@@ -16,9 +16,18 @@
  * @param int $post_id
  * @return string/object
  */
- function ea_first_term( $taxonomy = 'category', $field = false, $post_id = false ) {
+function ea_first_term( $args = [] ) {
 
-	$post_id = $post_id ? $post_id : get_the_ID();
+	$defaults = [
+		'taxonomy'	=> 'category',
+		'field'		=> null,
+		'post_id'	=> null,
+	];
+
+	$args = wp_parse_args( $args, $defaults );
+
+	$post_id = !empty( $args['post_id'] ) ? intval( $args['post_id'] ) : get_the_ID();
+	$field = !empty( $args['field'] ) ? esc_attr( $args['field'] ) : false;
 	$term = false;
 
 	// Use WP SEO Primary Term

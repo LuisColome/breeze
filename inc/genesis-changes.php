@@ -179,7 +179,21 @@ add_filter( 'body_class', 'genesis_sample_blocks_body_classes' );
  */
 function featured_post_image() {
     if ( ! is_singular( 'post' ) )
-      return;
-      the_post_thumbnail('cfhh-featured-images');
-  }
-  add_action( 'genesis_entry_content', 'featured_post_image', 8 );
+    return;
+    
+    the_post_thumbnail('cfhh-featured-images');
+}
+add_action( 'genesis_entry_content', 'featured_post_image', 8 );
+
+/**
+ * Force Content Width Layout on single WordPress native posts. 
+ * 
+ */
+function lcm_post_content_width() {
+	if( is_singular('post')) {
+        //* Force full-width-content layout setting
+        add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_content_width' );
+	}
+}
+add_action( 'genesis_meta', 'lcm_post_content_width' );
+

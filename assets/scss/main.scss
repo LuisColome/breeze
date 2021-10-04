@@ -42,6 +42,7 @@
 @use "layouts/navigation";
 @use "layouts/sidebar";
 @use "layouts/singular";
+@use "layouts/single-center";
 @use "layouts/entry-content";
 @use "layouts/entry-meta";
 @use "layouts/post-summary";
@@ -52,3 +53,7 @@
 @use "layouts/site-footer";
 
 @use "vendor/include-media";
+
+body {
+    overflow-x: hidden;
+}
