@@ -1,16 +1,15 @@
 @use "abstracts" as *;
 
+// Used only for editor styles. It does not renders on main.scss 
+
 body, p {
 	@include base-style();
+    overflow-x: visible;
 }
 
 /* Post title width */
 .editor-post-title__block.wp-block {
 	max-width: $content-width;
-
-	/* Post title styling */
-	// .editor-post-title__input {
-	// }
 }
 
 /* Main column width */
