@@ -6,7 +6,6 @@
 @use "abstracts/mixins";
 @use "abstracts/variables";
 
-
 // Base
 @use "base/reset";
 @use "base/base";
@@ -48,12 +47,7 @@
 @use "layouts/post-summary";
 @use "layouts/comments";
 @use "layouts/widgets";
-@use "layouts/gutenberg";
 @use "layouts/forms";
 @use "layouts/site-footer";
 
 @use "vendor/include-media";
-
-body {
-    overflow-x: hidden;
-}
