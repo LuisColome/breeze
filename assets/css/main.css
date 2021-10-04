@@ -1936,8 +1936,38 @@ hr::before {
   margin-top: 0;
 }
 
-/* Single Center
----------------------------------------------------------------------------------------------------- */
+.lcm-header {
+  margin-bottom: 2.2rem;
+}
+.lcm-header__columns {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  gap: 20px 32px;
+}
+@media (max-width: 767px) {
+  .lcm-header__columns {
+    grid-template-columns: 1fr;
+  }
+}
+.lcm-header__column {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.lcm-header__specialty {
+  align-self: start;
+  margin-bottom: 1rem;
+}
+.lcm-header__specialty__link {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.lcm-header__rating svg {
+  margin-right: 2px;
+}
+.lcm-header__location {
+  font-size: 1.2em;
+}
+
 /* WordPress
 --------------------------------------------- */
 .alignleft {

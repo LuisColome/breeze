@@ -1,5 +1,44 @@
 @use "abstracts" as *;
 @use "../vendor/include-media" as *;
 
-/* Single Center
----------------------------------------------------------------------------------------------------- */
+// Single Center
+
+.lcm-header {
+    margin-bottom: $margin_2x;
+    
+    &__columns {
+        display: grid;
+        grid-template-columns: 1fr 40%;
+        gap: $block-margin $grid-gap;
+
+        @include media('<tablet') {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__column {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    &__specialty {
+        align-self: start;
+        margin-bottom: 1rem;
+
+        &__link {
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+    }
+
+    &__rating {
+
+        svg {
+            margin-right: 2px;
+        }
+    }
+
+    &__location {
+        font-size: 1.2em;
+    }
+}
