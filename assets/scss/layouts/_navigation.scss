@@ -298,7 +298,7 @@
 		// position: absolute;
 		// top: 0;
         width: 26px;
-        height: 18px;
+        height: 24px;
 
 		// @include media(">mobile_menu") {
 		// 	display: none; // Only display the toggle menu on mobile.
@@ -381,11 +381,11 @@
 		}
 
 		&.second {
-		top: 6px;
+		top: 8px;
 		}
 
 		&.third {
-		top: 12px;
+		top: 16px;
 		}
 	}
 
@@ -410,7 +410,7 @@
 
 			&.first {
 				transform: rotate(315deg);
-                top: 9px;
+                top: 11px;
                 right: -2px;
                 width: 50%;
                 height: 4px;
@@ -422,7 +422,7 @@
 
 			&.third {
 				transform: rotate(225deg);
-				top: 2px;
+				top: 4px;
                 right: -2px;
 				width: 50%;
                 height: 4px;
