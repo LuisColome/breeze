@@ -1828,106 +1828,106 @@ hr::before {
 /* Singular
 ---------------------------------------------------------------------------------------------------- */
 .entry-content > *,
-.editor-styles-wrapper > * {
+.block-area > * {
   margin: 20px 0;
   max-width: 100%;
 }
 .entry-content > *:first-child,
-.editor-styles-wrapper > *:first-child {
+.block-area > *:first-child {
   margin-top: 0;
 }
 .entry-content > *:last-child,
-.editor-styles-wrapper > *:last-child {
+.block-area > *:last-child {
   margin-bottom: 0;
 }
 .full-width-content .entry-content > *.alignwide, .content-width .entry-content > *.alignwide,
-.full-width-content .editor-styles-wrapper > *.alignwide,
-.content-width .editor-styles-wrapper > *.alignwide {
+.full-width-content .block-area > *.alignwide,
+.content-width .block-area > *.alignwide {
   margin: calc( 2 * 20px ) calc(50% - 50vw);
   max-width: 100vw;
   width: auto;
   padding: 0 1.375rem;
 }
 .full-width-content .entry-content > *.alignwide[class^=wp-block-kadence], .content-width .entry-content > *.alignwide[class^=wp-block-kadence],
-.full-width-content .editor-styles-wrapper > *.alignwide[class^=wp-block-kadence],
-.content-width .editor-styles-wrapper > *.alignwide[class^=wp-block-kadence] {
+.full-width-content .block-area > *.alignwide[class^=wp-block-kadence],
+.content-width .block-area > *.alignwide[class^=wp-block-kadence] {
   padding: 0;
 }
 @media (min-width: 1280px) {
   .full-width-content .entry-content > *.alignwide, .content-width .entry-content > *.alignwide,
-.full-width-content .editor-styles-wrapper > *.alignwide,
-.content-width .editor-styles-wrapper > *.alignwide {
+.full-width-content .block-area > *.alignwide,
+.content-width .block-area > *.alignwide {
     margin: calc( 2 * 20px) calc(25% - 25vw);
   }
 }
 .full-width-content .entry-content > *.alignwide:first-child, .content-width .entry-content > *.alignwide:first-child,
-.full-width-content .editor-styles-wrapper > *.alignwide:first-child,
-.content-width .editor-styles-wrapper > *.alignwide:first-child {
+.full-width-content .block-area > *.alignwide:first-child,
+.content-width .block-area > *.alignwide:first-child {
   margin-top: 0;
 }
 .full-width-content .entry-content > *.alignfull, .content-width .entry-content > *.alignfull,
-.full-width-content .editor-styles-wrapper > *.alignfull,
-.content-width .editor-styles-wrapper > *.alignfull {
+.full-width-content .block-area > *.alignfull,
+.content-width .block-area > *.alignfull {
   margin: calc( 2 * 20px ) calc(50% - 50vw);
   max-width: 100vw;
   width: 100vw;
   padding: 0 1.375rem;
 }
 .full-width-content .entry-content > *.alignfull[class^=wp-block-kadence], .content-width .entry-content > *.alignfull[class^=wp-block-kadence],
-.full-width-content .editor-styles-wrapper > *.alignfull[class^=wp-block-kadence],
-.content-width .editor-styles-wrapper > *.alignfull[class^=wp-block-kadence] {
+.full-width-content .block-area > *.alignfull[class^=wp-block-kadence],
+.content-width .block-area > *.alignfull[class^=wp-block-kadence] {
   padding: 0;
 }
 .full-width-content .entry-content > *.aligncontent, .content-width .entry-content > *.aligncontent,
-.full-width-content .editor-styles-wrapper > *.aligncontent,
-.content-width .editor-styles-wrapper > *.aligncontent {
+.full-width-content .block-area > *.aligncontent,
+.content-width .block-area > *.aligncontent {
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
 }
 .full-width-content .entry-content > *.alignwide .alignwide, .full-width-content .entry-content > *.alignfull .alignwide, .content-width .entry-content > *.alignwide .alignwide, .content-width .entry-content > *.alignfull .alignwide,
-.full-width-content .editor-styles-wrapper > *.alignwide .alignwide,
-.full-width-content .editor-styles-wrapper > *.alignfull .alignwide,
-.content-width .editor-styles-wrapper > *.alignwide .alignwide,
-.content-width .editor-styles-wrapper > *.alignfull .alignwide {
+.full-width-content .block-area > *.alignwide .alignwide,
+.full-width-content .block-area > *.alignfull .alignwide,
+.content-width .block-area > *.alignwide .alignwide,
+.content-width .block-area > *.alignfull .alignwide {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
 .full-width-content .entry-content > *.alignwide .aligncontent, .full-width-content .entry-content > *.alignfull .aligncontent, .content-width .entry-content > *.alignwide .aligncontent, .content-width .entry-content > *.alignfull .aligncontent,
-.full-width-content .editor-styles-wrapper > *.alignwide .aligncontent,
-.full-width-content .editor-styles-wrapper > *.alignfull .aligncontent,
-.content-width .editor-styles-wrapper > *.alignwide .aligncontent,
-.content-width .editor-styles-wrapper > *.alignfull .aligncontent {
+.full-width-content .block-area > *.alignwide .aligncontent,
+.full-width-content .block-area > *.alignfull .aligncontent,
+.content-width .block-area > *.alignwide .aligncontent,
+.content-width .block-area > *.alignfull .aligncontent {
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
 }
 .entry-content > *.alignleft,
-.editor-styles-wrapper > *.alignleft {
+.block-area > *.alignleft {
   /*rtl:ignore*/
   float: left;
   margin: 0 20px 20px 0;
 }
 .entry-content > *.alignright,
-.editor-styles-wrapper > *.alignright {
+.block-area > *.alignright {
   /*rtl:ignore*/
   float: right;
   margin: 0 0 20px 20px;
 }
 .entry-content > *.aligncenter,
-.editor-styles-wrapper > *.aligncenter {
+.block-area > *.aligncenter {
   margin-left: auto;
   margin-right: auto;
 }
 .entry-content > *.wp-block-quote, .entry-content > *.post-listing-block,
-.editor-styles-wrapper > *.wp-block-quote,
-.editor-styles-wrapper > *.post-listing-block {
+.block-area > *.wp-block-quote,
+.block-area > *.post-listing-block {
   margin-top: calc( 2 * 20px);
   margin-bottom: calc( 2 * 20px);
 }
 .entry-content > *.wp-block-search,
-.editor-styles-wrapper > *.wp-block-search {
+.block-area > *.wp-block-search {
   max-width: 568px;
   margin-left: auto;
   margin-right: auto;
@@ -1937,6 +1937,8 @@ hr::before {
   margin-top: 0;
 }
 
+/* Single Center
+---------------------------------------------------------------------------------------------------- */
 /* WordPress
 --------------------------------------------- */
 .alignleft {
