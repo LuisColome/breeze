@@ -14,9 +14,7 @@
 .entry-content > *,
 .editor-styles-wrapper > * {
 
-    /* Lists
-    --------------------------------------------- */
-
+    // Lists
     ul, ol {
         padding-left: 1.5rem;
 
@@ -41,9 +39,7 @@
         }
     }
 
-    /** Custom List
-    --------------------------------------------- */
-
+    // Custom List
     ul.check-list {
         list-style: none;
 
