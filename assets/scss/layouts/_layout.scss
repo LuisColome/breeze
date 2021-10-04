@@ -31,7 +31,7 @@
 
 .site-inner {
     clear: both;
-    max-width: calc($grid-width + 60px); // 1200px wide plus padding
+    max-width: $grid-width + 60; // 1200px wide plus padding
     margin: 0 auto;
     padding: 60px 0 30px;
 

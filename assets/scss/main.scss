@@ -53,3 +53,7 @@
 @use "layouts/site-footer";
 
 @use "vendor/include-media";
+
+body {
+    overflow-x: hidden;
+}
