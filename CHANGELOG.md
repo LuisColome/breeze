@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/0.9.0/) ([Spanish version](https://keepachangelog.com/es-ES/0.9.0/)),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (or at least I'll try to).
 
+
+#### [0.9.9](https://github.com/LuisColome/breeze/releases/tag/v0.9.9) - 2021-10-04
+#### Add
+- Styles for custom header on Center Template
+- Star icons to center partial template
+- Options to select specialty and province on slider block
+- Fallback image to Center partial
+- Function to force content width layout.
+#### Update
+- Layout width now based on $grid-width variable
+- File structure to load styles in Gutenberg
+- Helper functions.
+#### Fix
+- Gutenberg paragraph font sizes.
+#### Remove
+- WP comments from Centers template.
+
 #### [0.9.8](https://github.com/LuisColome/breeze/releases/tag/v0.9.8) - 2021-09-29
 #### Add
 - Support for provinces and cities custom blocks.
