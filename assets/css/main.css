@@ -565,7 +565,7 @@ figure {
 .entry-content blockquote.wp-block-quote,
 .entry-content .wp-block-pullquote {
   position: relative;
-  padding: 5%;
+  padding: calc(5% + 10px) 5%;
   margin: 2.2rem auto;
   border: 2px solid #eeeeee;
   border-radius: 16px;
@@ -588,8 +588,8 @@ figure {
   z-index: 1;
   width: 40px;
   height: 40px;
-  top: 50%;
-  transform: translateX(-50%) translateY(-20px) rotate(180deg);
+  left: 50%;
+  transform: translateY(-50%) translateX(-20px) rotate(180deg);
   border: 2px solid #eeeeee;
   border-radius: 100px;
   padding: 20px;
