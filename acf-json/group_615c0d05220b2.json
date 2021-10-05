@@ -1,0 +1,60 @@
+{
+    "key": "group_615c0d05220b2",
+    "title": "Block - Simple Testimonials",
+    "fields": [
+        {
+            "key": "field_615c0d0f42bda",
+            "label": "Simple Rating",
+            "name": "br_simple_rating",
+            "type": "star_rating_field",
+            "instructions": "Mark the number of stars you want to be rated for.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "max_stars": 5,
+            "return_type": 0,
+            "allow_half": 0
+        },
+        {
+            "key": "field_615c0d3e42bdb",
+            "label": "Simple testimonial",
+            "name": "br_simple_testimonial",
+            "type": "text",
+            "instructions": "type the simple testimonial as you want it to be displayed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/simple-testimonials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1633422720
+}

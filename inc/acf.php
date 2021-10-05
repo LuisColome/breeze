@@ -85,6 +85,16 @@ class BE_ACF_Customizations {
                 },
                 'keywords'		    => array( 'best', 'rehabs', 'center', 'centre', 'slider', 'carousel' )
             ));
+
+            acf_register_block_type( array(
+                'name'			    => 'simple-testimonials',
+                'title'			    => __( 'Simple testimonials', 'breeze' ),
+                'render_template'	=> 'partials/block/simple-testimonials/simple-testimonials.php',
+                'category'		    => 'formatting',
+                'icon'			    => 'testimonial',
+                'mode'			    => 'auto',
+                'keywords'		    => array( 'best', 'rehabs', 'testimonials', 'simple', 'opinions', 'review' )
+            ));
 	}
 }
 new BE_ACF_Customizations();
