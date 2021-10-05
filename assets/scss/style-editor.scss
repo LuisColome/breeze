@@ -38,19 +38,19 @@
 
 // Layouts
 @use "layouts/layout";
-@use "layouts/archive";
-@use "layouts/site-header";
-@use "layouts/navigation";
+// @use "layouts/archive";
+// @use "layouts/site-header";
+// @use "layouts/navigation";
 @use "layouts/sidebar";
 @use "layouts/singular";
 @use "layouts/entry-content";
 @use "layouts/entry-meta";
 @use "layouts/post-summary";
-@use "layouts/comments";
+// @use "layouts/comments";
 @use "layouts/widgets";
 @use "layouts/gutenberg";
-@use "layouts/forms";
-@use "layouts/site-footer";
+// @use "layouts/forms";
+// @use "layouts/site-footer";
 
 @use "vendor/include-media";
 
