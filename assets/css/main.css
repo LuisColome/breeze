@@ -1478,6 +1478,7 @@ hr::before {
   clear: both;
   line-height: 1;
   margin: 0;
+  padding: 0;
   width: 100%;
 }
 .nav-menu .menu-item {
