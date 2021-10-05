@@ -5,6 +5,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/0.9.0/) 
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (or at least I'll try to).
 
 
+#### [1.0.0](https://github.com/LuisColome/breeze/releases/tag/v1.0.0) - 2021-10-05
+#### Add
+- Simple Testimonials block
+- Icons and style to native post meta.
+#### Update
+- Hamburger menu (taller icon)
+- Loading only the essential styles on editor dashboard.
+#### Fix
+- Default padding on navigation
+- Blockquote style
+- Minor typography bugs
+- Editor overflow bug.
+
 #### [0.9.9](https://github.com/LuisColome/breeze/releases/tag/v0.9.9) - 2021-10-04
 #### Add
 - Styles for custom header on Center Template
