@@ -1002,19 +1002,9 @@ hr::before {
   max-width: 590px;
 }
 
-.lcm-center {
-  margin: 20px 0 4.4rem;
-}
-.lcm-center__header {
-  margin: 16px 0 0 8px;
-}
-.lcm-center__title {
-  font-size: 18px;
-  margin: 10px 0;
-}
-.lcm-center__title a {
-  text-decoration: none;
-  color: #1C73E9;
+.swiper-center .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-center .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
 }
 
 .entry-content .canadaprovinces,
@@ -1411,7 +1401,7 @@ hr::before {
   position: relative;
   z-index: 9;
   padding: 0;
-  max-width: clamp(80px, 130px + 5vw, 190px);
+  max-width: clamp(80px, 130px + 5vw, 170px);
   transition: all 0.2s ease-in-out;
 }
 

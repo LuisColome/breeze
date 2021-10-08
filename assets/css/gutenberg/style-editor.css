@@ -900,19 +900,9 @@ hr::before {
   text-decoration: underline;
 }
 
-.lcm-center {
-  margin: 20px 0 4.4rem;
-}
-.lcm-center__header {
-  margin: 16px 0 0 8px;
-}
-.lcm-center__title {
-  font-size: 18px;
-  margin: 10px 0;
-}
-.lcm-center__title a {
-  text-decoration: none;
-  color: #1C73E9;
+.swiper-center .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-center .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
 }
 
 /** Contact Form 7
