@@ -1,0 +1,20 @@
+@use "abstracts" as *;
+@use "../vendor/include-media" as *;
+
+// Styles for archive center partial
+.lcm-center {
+    // margin: $block-margin 0 $margin_4x;
+    
+    &__header {
+        margin: 16px 0 0 8px;
+    }
+    &__title {
+        font-size: 18px;
+        margin: 4px 0 $block-margin / 2 0;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+        }
+    }
+}
