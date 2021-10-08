@@ -900,6 +900,9 @@ hr::before {
   text-decoration: underline;
 }
 
+.swiper-center.swiper {
+  padding-bottom: 2.2rem;
+}
 .swiper-center .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-center .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 0;

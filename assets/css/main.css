@@ -1002,6 +1002,9 @@ hr::before {
   max-width: 590px;
 }
 
+.swiper-center.swiper {
+  padding-bottom: 2.2rem;
+}
 .swiper-center .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-center .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 0;
@@ -1341,6 +1344,18 @@ hr::before {
   background: #3f86eb;
   color: #ffffff;
   font-weight: 700;
+}
+
+.lcm-center__header {
+  margin: 16px 0 0 8px;
+}
+.lcm-center__title {
+  font-size: 18px;
+  margin: 4px 0 10px 0;
+}
+.lcm-center__title a {
+  text-decoration: none;
+  color: #1C73E9;
 }
 
 /* Site Header

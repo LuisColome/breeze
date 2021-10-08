@@ -3,6 +3,10 @@
 
 .swiper-center {
 
+    &.swiper {
+        padding-bottom: $margin_2x;
+    }
+
     .swiper-horizontal > .swiper-pagination-bullets,
     .swiper-pagination-bullets.swiper-pagination-horizontal {
         bottom: 0;
