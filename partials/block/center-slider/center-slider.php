@@ -64,7 +64,7 @@ $lessargs = array(
             $query = new WP_Query($lessargs);
             if ( $query->have_posts() ) : ?>
                 <h4 class="swiper__title"><?php echo $specialty_label ?></h4>
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper swiper-center">
                     <div class="swiper-wrapper">
                         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                         
