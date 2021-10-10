@@ -144,3 +144,13 @@ function ea_bg_image_style( $image_id = false, $image_size = 'full' ) {
 
 		return $svg;
 }
+
+/**
+ * Breadcrumbs
+ *
+ */
+function ea_breadcrumbs() {
+	if ( function_exists('yoast_breadcrumb') ) {
+		yoast_breadcrumb( '<p id="breadcrumbs" class="breadcrumb">','</p>' );
+	}
+}
