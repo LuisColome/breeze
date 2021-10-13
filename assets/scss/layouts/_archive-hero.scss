@@ -1,0 +1,43 @@
+@use "abstracts" as *;
+@use "../vendor/include-media" as *;
+
+// Archive hero defined in archive.php
+.has-hero-section {
+
+    .lcm-hero {
+        height: 100%;
+        min-height: 60vh;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-position: 50% 50%;
+    
+        &__wrap{
+            max-width: $content-width;
+        }
+    
+        &__title,
+        p {
+            text-align: center;
+            font-weight: 500;
+            color: $white;
+            text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.23);
+        }
+    
+        p {
+            font-size: 1.35rem;
+            font-size: clamp(1.1rem, 1rem + .5vw, 1.35rem);
+        }
+    }
+
+    .breadcrumb {
+        color: $white;
+        text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.35);
+        text-align: center;
+
+        a {
+            color: $white;
+            text-decoration-color: $white;
+        }
+    }
+}
