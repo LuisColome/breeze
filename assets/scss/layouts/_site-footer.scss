@@ -8,10 +8,10 @@
 
 .footer-widgets {
 	// background: brand-color( 'blue' );
-  	background: $grey_8;
+  	background: $grey_2;
 	padding: 40px $wrap_edge 10px;
 	position: relative;
-	color: $white;
+	// color: $white;
 
   .wrap {
 
@@ -92,28 +92,27 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-    background: $grey_10;
-	color: rgba( $white, .75 );
+    background: $grey_2;
 	font-size: 14px;
 	padding: 32px 0;
 	text-align: center;
 
 	.wrap {
-    max-width: $grid-width;
-    margin: 0 auto;
-    
-    & > *:last-child {
-		  margin-bottom: 0;
-	  }
-}
+        max-width: $grid-width;
+        margin: 0 auto;
+        
+        & > *:last-child {
+                margin-bottom: 0;
+            }
+        }
 
-	a {
-		color: rgba( $white, .75 );
+	// a {
+	// 	color: rgba( $white, .75 );
 
-		&:hover {
-			color: rgba( $white, 1 );
-		}
-	}
+	// 	&:hover {
+	// 		color: rgba( $white, 1 );
+	// 	}
+	// }
 
 	.footer-links a + a {
 		margin-left: 12px;

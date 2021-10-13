@@ -2440,10 +2440,9 @@ textarea:focus:-ms-input-placeholder {
 /* Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
-  background: #616161;
+  background: #f9f9f9;
   padding: 40px 1.375rem 10px;
   position: relative;
-  color: #ffffff;
 }
 .footer-widgets .wrap::before, .footer-widgets .wrap::after {
   content: none;
@@ -2528,8 +2527,7 @@ textarea:focus:-ms-input-placeholder {
 /* Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background: #212223;
-  color: rgba(255, 255, 255, 0.75);
+  background: #f9f9f9;
   font-size: 14px;
   padding: 32px 0;
   text-align: center;
@@ -2540,12 +2538,6 @@ textarea:focus:-ms-input-placeholder {
 }
 .site-footer .wrap > *:last-child {
   margin-bottom: 0;
-}
-.site-footer a {
-  color: rgba(255, 255, 255, 0.75);
-}
-.site-footer a:hover {
-  color: white;
 }
 .site-footer .footer-links a + a {
   margin-left: 12px;
