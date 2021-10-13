@@ -9,7 +9,7 @@ $default: nth( nth( $brand_colors, 1 ), 1 ); // first color in $brand_colors arr
 	border: 2px solid brand-color( $default );
 	border-radius: 100px;
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: 400;
 	line-height: 32px;
 	padding: .5em 1.5em;
 	text-decoration: none;
