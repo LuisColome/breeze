@@ -7,19 +7,22 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-	// background: brand-color( 'blue' );
   	background: $grey_2;
 	padding: 40px $wrap_edge 10px;
 	position: relative;
-	// color: $white;
 
-  .wrap {
+    .wrap {
+        max-width: $grid-width;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        gap: $grid-gap;
 
-    &::before,
-    &::after {
-      content: none;
+        &::before,
+        &::after {
+            content: none;
+        }
     }
-  }
 
 	ul {
 		margin-bottom: 30px;
@@ -52,40 +55,31 @@
 		}
 	}
 
-	@include media("<tablet") {
+	// @include media("<tablet") {
 
-		.social-links li {
-				display: inline-block;
-				margin: 0;
-		}
+	// 	.footer-widgets-1 {
+	// 		float: left;
+	// 		width: calc( 50% - 8px );
+	// 	}
 
-		.social-links .label {
-			display: none;
-		}
+	// 	.footer-widgets-2 {
+	// 		float: right;
+	// 		width: calc( 50% - 8px );
+	// 	}
 
-		.footer-widgets-1 {
-			float: left;
-			width: calc( 50% - 8px );
-		}
+	// 	.footer-widgets-3 {
+	// 		overflow: hidden;
+	// 		width: 100%;
+	// 	}
+	// }
 
-		.footer-widgets-2 {
-			float: right;
-			width: calc( 50% - 8px );
-		}
-
-		.footer-widgets-3 {
-			overflow: hidden;
-			width: 100%;
-		}
-	}
-
-	@include media(">=tablet") {
-		.wrap {
-      max-width: $grid-width;
-      margin: 0 auto;
-			@include columns( 3, 'div' );
-		}
-	}
+	// @include media(">=tablet") {
+	// 	.wrap {
+    //         max-width: $grid-width;
+    //         margin: 0 auto;
+	// 		@include columns( 2, 'div' );
+	// 	}
+	// }
 }
   
 /* Site Footer
@@ -102,9 +96,9 @@
         margin: 0 auto;
         
         & > *:last-child {
-                margin-bottom: 0;
-            }
+            margin-bottom: 0;
         }
+    }
 
 	// a {
 	// 	color: rgba( $white, .75 );
