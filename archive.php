@@ -22,29 +22,46 @@ function ea_blog_archive_body_class( $classes ) {
 add_filter( 'body_class', 'ea_blog_archive_body_class' );
 
 // Move breadcrumbs
-// remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
-// add_action( 'genesis_archive_title_descriptions', 'genesis_do_breadcrumbs', 8 );
+remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
+if( !is_tax( array('province', 'city', 'specialty') ) ) {
+    add_action( 'genesis_archive_title_descriptions', 'genesis_do_breadcrumbs', 8 );
+}
+
 
 /**
- * 
- * 
+ * Sets up hero section.
+ *
+ * @since 1.0.0
+ *
+ * @return void
  */
-function lcm_display_hero_section(){
+function lcm_hero_section(){
 
     // Display the hero section only on custom taxonomies.
 	if( is_tax( array('province', 'city', 'specialty') ) ) {
 
-        // Add body class 
+        // Hero section body class related. 
         add_filter( 'body_class', 'lcm_hero_body_class', 10, 1 );
+
+        // Attributes.
+        add_filter( 'genesis_attr_taxonomy-archive-description', 'lcm_add_hero_subtitle_class' );
+        add_filter( 'genesis_attr_archive-title', 'lcm_add_hero_title_class' );
         
-        add_action( 'genesis_after_header', 'dcwd_archive_hero_image' );
+        // Hero structure.
+        add_action( 'genesis_after_header', 'lcm_archive_hero_image' );
     }
 }
-add_action( 'genesis_meta', 'lcm_display_hero_section' );
+add_action( 'genesis_meta', 'lcm_hero_section' );
 
 
-
-function dcwd_archive_hero_image() {
+/**
+ * Display the hero section.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function lcm_archive_hero_image() {
 	
 	global $wp_query;
 
@@ -64,17 +81,18 @@ function dcwd_archive_hero_image() {
     // Check if there is an image attached to the custom field.
     if( !empty($archive_background) ) {
     ?>
-	    <section class="lcm-hero" style="background-image:url('<?php echo $herourl; ?>');background-size:cover;">
+	    <section class="lcm-hero" role="banner" style="background-image:url('<?php echo $herourl; ?>');background-size:cover;">
     <?php
     }
     else { ?>
-        <section class="lcm-hero" style="background-image:url('<?php echo $url; ?>');background-size:cover;">
+        <section class="lcm-hero" role="banner" style="background-image:url('<?php echo $url; ?>');background-size:cover;">
     <?php
     } ?>
             <div class="lcm-hero__wrap">
                 <?php 
                 // Add the Archive titles info.
-                genesis_do_taxonomy_title_description(); ?>                
+                genesis_do_taxonomy_title_description(); 
+                genesis_do_breadcrumbs(); ?>                
             </div>
         </section>
         <?php
@@ -84,18 +102,49 @@ function dcwd_archive_hero_image() {
 }
 
 /**
- * Add hero section body class.
+ * Adds hero utility class to body element.
  *
  * @since 1.0.0
  *
- * @param $classes
+ * @param array $classes List of body classes.
  *
  * @return array
  */
 function lcm_hero_body_class( $classes ) {
-	$classes[] = 'has-hero-section';
 
+	$classes[] = 'has-hero-section';
 	return $classes;
+}
+
+/**
+ * Adds attributes to hero archive title markup.
+ *
+ * @since 1.0.0
+ *
+ * @param array $atts Hero title attributes.
+ *
+ * @return array
+ */
+function lcm_add_hero_title_class( $atts ) { 
+
+    $atts['class'] = 'lcm-hero__title';
+    $atts['itemprop'] .= 'headline';
+    return $atts;
+}
+
+/**
+ * Adds attributes to hero section markup.
+ *
+ * @since 1.0.0
+ *
+ * @param array $atts Hero entry attributes.
+ *
+ * @return array
+ */
+function lcm_add_hero_subtitle_class( $atts ) { 
+
+    $atts['itemref'] = 'hero-section';
+    return $atts;
 }
 
 
