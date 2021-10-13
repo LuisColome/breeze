@@ -8,6 +8,9 @@
  * @license      GPL-2.0+
 **/
 
+//* Enable the block-based widget editor
+add_filter( 'use_widgets_block_editor', '__return_true' );
+
 /**
  * Site Footer
  */
