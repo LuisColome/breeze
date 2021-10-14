@@ -636,7 +636,7 @@ blockquote.wp-block-quote.is-style-large p {
 .wp-block-button__link {
   border: 2px solid #1C73E9;
   border-radius: 100px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 32px;
   padding: 0.5em 1.5em;
@@ -1369,7 +1369,7 @@ hr::before {
   left: -24px;
   width: 22px;
   height: 22px;
-  background: url(/wp-content/themes/box-theme/assets/icons/utility/check.svg) no-repeat;
+  background: url(/wp-content/themes/breeze/assets/icons/utility/check.svg) no-repeat;
   background-size: cover;
 }
 
