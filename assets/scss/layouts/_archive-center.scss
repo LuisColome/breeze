@@ -18,3 +18,20 @@
         }
     }
 }
+
+// Centers archive CTA.
+.archive-cta {
+
+    &__wrap {
+        padding-top: calc(50px + 5vh);
+        padding-bottom: calc(50px + 5vh);
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__title {
+        font-weight: 400;
+    }
+}
+
