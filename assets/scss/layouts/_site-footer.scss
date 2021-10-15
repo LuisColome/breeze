@@ -17,6 +17,10 @@
         display: grid;
         grid-template-columns: 60% 1fr;
         gap: $grid-gap;
+        
+        @include media('<=small') {
+            grid-template-columns: 1fr;
+        }
 
         &::before,
         &::after {
@@ -41,15 +45,15 @@
 	}
 
 	a {
-		color: $white;
-		text-decoration: none;
+		color: $primary-color;
+		// text-decoration: none;
 
 		&:hover {
-			text-decoration: underline;
+            color: $grey_7;
 		}
 
 		svg {
-			fill: $white;
+			fill: $base-color;
 			@include icon-position( 20px );
 			margin-right: 12px;
 		}
