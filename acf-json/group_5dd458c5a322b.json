@@ -3,6 +3,22 @@
     "title": "Site Options",
     "fields": [
         {
+            "key": "field_61694d983a69a",
+            "label": "Defaults",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
             "key": "field_5dd458cd3c3fd",
             "label": "Default Image",
             "name": "lcm_default_image",
@@ -25,6 +41,75 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_61694dbe3a69b",
+            "label": "Archive options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61694dd23a69c",
+            "label": "Title (Archive call to action)",
+            "name": "br_archive_title_cta",
+            "type": "text",
+            "instructions": "Title of the CTA. (Will be display in all Centre Archive Pages such as Mental Health, Ontario, Ottawa, etc...)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61694ea2c913d",
+            "label": "Subtitle (Archive call to action)",
+            "name": "br_archive_subtitle_cta",
+            "type": "text",
+            "instructions": "Subtitle of the CTA. (Will be display in all Centre Archive Pages such as Mental Health, Ontario, Ottawa, etc...)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61694ec5a36e4",
+            "label": "Link (Archive call to action)",
+            "name": "br_archive_link_cta",
+            "type": "link",
+            "instructions": "Link for the CTA button. (Will be display in all Centre Archive Pages such as Mental Health, Ontario, Ottawa, etc...)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -44,5 +129,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1633874140
+    "modified": 1634291483
 }
