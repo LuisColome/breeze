@@ -148,4 +148,44 @@ function lcm_add_hero_subtitle_class( $atts ) {
 }
 
 
+
+/**
+ * Sets up CTA archive pages
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function lcm_archive_cta(){
+
+    $cta_title = get_field('br_archive_title_cta', 'option');
+    $cta_subtitle = get_field('br_archive_subtitle_cta', 'option');
+    
+    $cta_link = get_field('br_archive_link_cta', 'option');
+
+
+    // Display the hero section only on custom taxonomies.
+	if( is_tax( array('province', 'city', 'specialty') ) ) {
+        
+        echo '<div class="archive-cta alignfull"><div class="archive-cta__wrap">';
+        
+            echo '<h2 class="archive-cta__title has-text-align-center">' . $cta_title . '</h2>';
+            echo '<p class="has-text-align-center has-large-font-size">' . $cta_subtitle . '</p>';
+            
+            if( $cta_link ) {
+                $link_url = $cta_link['url'];
+                $link_title = $cta_link['title'];
+                $link_target = $cta_link['target'] ? $cta_link['target'] : '_self';
+                
+                echo '<div class="wp-block-buttons is-content-justification-center">';
+                    echo '<div class="wp-block-button"><a class="wp-block-button__link" href="' . esc_url( $link_url ) . '" target="' . esc_attr( $link_target ) . '">' . esc_html( $link_title) . '</a></div>';
+                echo '</div>';
+                
+            }
+
+        echo '</div></div>';
+    }
+}
+add_action( 'genesis_after_content', 'lcm_archive_cta', 15 );
+
 genesis();
