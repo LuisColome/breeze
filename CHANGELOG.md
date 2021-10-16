@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/0.9.0/) ([Spanish version](https://keepachangelog.com/es-ES/0.9.0/)),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (or at least I'll try to).
 
+#### [1.1.0](https://github.com/LuisColome/breeze/releases/tag/v1.1.0) - 2021-10-16
+#### Add
+- Partial for Center archive pages
+- Field to select which city to display in City List Custom Block
+- Breadcrumbs
+- Default image from ACF Option pages for Centers archive partial and single Center
+- Hero section on Center archive pages with default image support
+- Center archive CTA (ACF)
+#### Update
+- Swiper slider block partial
+- Footer styles according to design
+#### Fix
+- Size of the main logo
+- Pagination space on Swiper sliders
+- Editor styles support
+- Font style on buttons
+- Icon for Checked lists
+- Padding on Center archive partial header
+- Footer widget to three
+- Breackpoint name (to more human understandable)
 
 #### [1.0.0](https://github.com/LuisColome/breeze/releases/tag/v1.0.0) - 2021-10-05
 #### Add
