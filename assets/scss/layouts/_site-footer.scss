@@ -17,10 +17,15 @@
         display: grid;
         grid-template-columns: 60% 1fr;
         gap: $grid-gap;
+
+        .footer-widgets-1 {
+            grid-column: 1 / -1;
+        }
         
         @include media('<=small') {
             grid-template-columns: 1fr;
         }
+
 
         &::before,
         &::after {

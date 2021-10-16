@@ -2465,6 +2465,9 @@ textarea:focus:-ms-input-placeholder {
   grid-template-columns: 60% 1fr;
   gap: 32px;
 }
+.footer-widgets .wrap .footer-widgets-1 {
+  grid-column: 1/-1;
+}
 @media (max-width: 600px) {
   .footer-widgets .wrap {
     grid-template-columns: 1fr;
