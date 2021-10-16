@@ -1,0 +1,78 @@
+{
+    "key": "group_6161a3eaf32e5",
+    "title": "Block - City list",
+    "fields": [
+        {
+            "key": "field_6161a3f522323",
+            "label": "City list",
+            "name": "br_city_list",
+            "type": "checkbox",
+            "instructions": "Select the Cities you want to display on the list linked to their archive page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "brandon": "Brandon",
+                "calgary": "Calgary",
+                "charlottetown": "Charlottetown",
+                "conception-bay": "Conception Bay",
+                "dartmouth": "Dartmouth",
+                "edmonton": "Edmonton",
+                "fredericton": "Fredericton",
+                "halifax": "Halifax",
+                "kelowna": "Kelowna",
+                "laval": "Laval",
+                "lower-sackville": "Lower Sackville",
+                "mississauga": "Mississauga",
+                "moncton": "Moncton",
+                "montreal": "Montreal",
+                "mount-pearl": "Mount Pearl",
+                "ottawa": "Ottawa",
+                "prince-albert": "Prince Albert",
+                "quebec-city": "Quebec City",
+                "red-deer": "Red Deer",
+                "regina": "Regina",
+                "saint-john": "Saint John",
+                "sasakatoon": "Sasakatoon",
+                "st-johns": "St. John’s",
+                "summerside": "Summerside",
+                "toronto": "Toronto",
+                "vancouver": "Vancouver",
+                "victoria": "Victoria",
+                "whitehorse": "Whitehorse",
+                "winnipeg": "Winnipeg",
+                "yellowknife": "Yellowknife"
+            },
+            "allow_custom": 0,
+            "default_value": [
+                "brandon"
+            ],
+            "layout": "vertical",
+            "toggle": 1,
+            "return_format": "array",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/city-list"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1633856191
+}

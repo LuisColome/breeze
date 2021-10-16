@@ -16,7 +16,7 @@
         grid-template-columns: 1fr;
         gap: $margin_2x $grid-gap;
 
-        @include media(">=phablet") {
+        @include media(">=small") {
             grid-template-columns: 1fr 1fr;
         }
 
@@ -34,7 +34,7 @@
     //     flex-flow: row;
     // }
 
-    .lcm-post__image {
+    &__image {
         position: relative;
         width: 100%;
 
@@ -43,7 +43,7 @@
         }
     }
     
-    .lcm-post__category {
+    &__category {
         position: absolute;
         bottom: 6%;
         left: 4%;
@@ -68,7 +68,11 @@
         }
     }
 
-    .lcm-post__title {
+    &__header {
+        padding: .5rem;
+    }
+
+    &__title {
         line-height: 0.72;
         margin: $base-margin / 2 0 $base-margin 0;
         
@@ -85,13 +89,13 @@
     }
 
 
-    .lcm-post__excerpt,
-    .lcm-post__content {
+    &__excerpt,
+    &__content {
         font-size: 16px;
         margin: $base-margin 0;
     }
 
-	.lcm-post__read-more-link {
+	&__read-more-link {
 		text-decoration: none;
 		font-size: 80%;
         font-weight: 500;

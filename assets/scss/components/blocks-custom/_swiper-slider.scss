@@ -1,19 +1,14 @@
 // Swiper Slider for Centers
 @use "abstracts" as *;
 
-.lcm-center {
-    margin: $block-margin 0 $margin_4x;
-    
-    &__header {
-        margin: 16px 0 0 8px;
-    }
-    &__title {
-        font-size: 18px;
-        margin: $block-margin / 2 0;
+.swiper-center {
 
-        a {
-            text-decoration: none;
-            color: $primary-color;
-        }
+    &.swiper {
+        padding-bottom: $margin_2x;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 0;
     }
 }

@@ -189,6 +189,9 @@ function ea_child_theme_setup() {
 		),
 	) );
 
+    // Enable theme support by default.
+    add_theme_support( 'hero-section' );
+
 	// // Registers the responsive menus. (/config/responsive-menus.php)
 	// if ( function_exists( 'genesis_register_responsive_menus' ) ) {
 	// 	genesis_register_responsive_menus( genesis_get_config( 'responsive-menus' ) );

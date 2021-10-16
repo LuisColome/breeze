@@ -181,7 +181,7 @@ function featured_post_image() {
     if ( ! is_singular( 'post' ) )
     return;
     
-    the_post_thumbnail('cfhh-featured-images');
+    the_post_thumbnail('lcm-center-featured');
 }
 add_action( 'genesis_entry_content', 'featured_post_image', 8 );
 

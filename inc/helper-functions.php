@@ -16,18 +16,9 @@
  * @param int $post_id
  * @return string/object
  */
-function ea_first_term( $args = [] ) {
+function ea_first_term( $taxonomy = 'category', $field = false, $post_id = false ) {
 
-	$defaults = [
-		'taxonomy'	=> 'category',
-		'field'		=> null,
-		'post_id'	=> null,
-	];
-
-	$args = wp_parse_args( $args, $defaults );
-
-	$post_id = !empty( $args['post_id'] ) ? intval( $args['post_id'] ) : get_the_ID();
-	$field = !empty( $args['field'] ) ? esc_attr( $args['field'] ) : false;
+	$post_id = $post_id ? $post_id : get_the_ID();
 	$term = false;
 
 	// Use WP SEO Primary Term
@@ -143,4 +134,14 @@ function ea_bg_image_style( $image_id = false, $image_size = 'full' ) {
 		}
 
 		return $svg;
+}
+
+/**
+ * Breadcrumbs
+ *
+ */
+function ea_breadcrumbs() {
+	if ( function_exists('yoast_breadcrumb') ) {
+		yoast_breadcrumb( '<p id="breadcrumbs" class="breadcrumb">','</p>' );
+	}
 }

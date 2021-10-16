@@ -11,10 +11,24 @@
 
 echo '<article class="lcm-center">'; 
 
+    $default_image = get_field('lcm_default_image', 'options');
+    if( $default_image ) {
+
+        // Image variables.
+        $url = $default_image['url'];
+        $title = $default_image['title'];
+        $alt = $default_image['alt'];
+        $caption = $default_image['caption'];
+
+        // Thumbnail size attributes.
+        $size = 'lcm-center-featured';
+        $thumb = $default_image['sizes'][ $size ];
+    }
+
     if( has_post_thumbnail() ) {
 	    echo '<a class="lcm-center__image-link" href="' . get_permalink() . '" tabindex="-1" aria-hidden="true">' . get_the_post_thumbnail( get_the_ID(), 'lcm-center-featured' ) . '</a>';
     }else{
-        echo '<a class="lcm-center__image-link" href="' . get_permalink() . '" tabindex="-1" aria-hidden="true"><img class="br__img fallback__imgage" src="/wp-content/uploads/fallback-image-768x512.jpg" alt="BestRehabs"></a>';
+        echo '<a class="lcm-center__image-link" href="' . get_permalink() . '" tabindex="-1" aria-hidden="true"><img class="br__img fallback__imgage" src="'.  esc_url($thumb)  .'" alt="' . esc_attr($alt) . '"></a>';
     }
 
 	echo '<header class="lcm-center__header">';

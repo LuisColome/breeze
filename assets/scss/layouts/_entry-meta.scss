@@ -142,21 +142,24 @@
 
 
 .breadcrumb {
-	font-size: 16px;
+	font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .65px;
 	margin-bottom: 24px;
+    color: $grey_6;
 
 	a {
 		color: $primary-color;
 
 		&:hover {
-			color: $highlight;
+			color: $grey_6;
 		}
 	}
 
 	.single & {
-		border-top: 1px solid $grey_3;
+		// border-top: 1px solid $grey_3;
 		padding-top: 32px;
-		text-align: center;
+		// text-align: center;
 	}
 }
 

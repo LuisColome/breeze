@@ -36,16 +36,7 @@ add_filter( 'genesis_attr_entry-header', 'cabecera_add_class_attr' );
  */
 function lcm_entry_header(){
 
-    $img = genesis_get_image(
-        array(
-            'format' => 'html', 
-            'size' => 'lcm-center-featured', 
-            'attr' => 
-            array(
-                'class' => 'lcm-header__img'
-            )
-        )
-    ); ?>
+    ?>
     
     <div class="lcm-header__wrap">
 
@@ -104,10 +95,38 @@ function lcm_entry_header(){
 
             <div class="lcm-header__column">
                 <figure class="lcm-header__img">
-                    <?php if($img) {
+                    <?php 
+
+                    $img = genesis_get_image(
+                        array(
+                            'format' => 'html', 
+                            'size' => 'lcm-center-featured', 
+                            'attr' => 
+                            array(
+                                'class' => 'lcm-header__img'
+                            )
+                        )
+                    ); 
+                    
+                    $default_image = get_field('lcm_default_image', 'options');
+                    if( $default_image ) {
+
+                        // Image variables.
+                        $url = $default_image['url'];
+                        $title = $default_image['title'];
+                        $alt = $default_image['alt'];
+                        $caption = $default_image['caption'];
+
+                        // Thumbnail size attributes.
+                        $size = 'lcm-center-featured';
+                        $thumb = $default_image['sizes'][ $size ];
+                    }
+                    
+                    
+                    if($img) {
                         echo $img;
                     }else{
-                        echo '<img class="lcm-header__img fallback-imagge" src="/wp-content/uploads/fallback-image-768x512.jpg" alt="BestRehabs">';
+                        echo '<img class="lcm-header__img fallback-imagge" src="'.  esc_url($thumb)  .'" alt="' . esc_attr($alt) . '">';
                     }?>
                 </figure>
             </div><!-- End second column -->
