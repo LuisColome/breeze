@@ -14,7 +14,7 @@ Genesis Child Theme that uses SCSS and PrePros to compile it. Tested up to WordP
 
 ## Usage
 
-It is set up to use with [Prepros](https://prepros.io/) to complie the SCSS (with source maps). Javascript is minify (with source maps)
+It is set up to use with [Prepros](https://prepros.io/) to complie the SCSS (with source maps). Javascript is minify (with source maps). Default branch has been changed to Develop.
 
 Rename folder to your theme name, change the `style.css` intro block to your theme information. Code as you will.
 
