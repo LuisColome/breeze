@@ -33,10 +33,10 @@
     clear: both;
     max-width: $grid-width + 60; // 1200px wide plus padding
     margin: 0 auto;
-    padding: 60px 0 30px;
+    padding: 60px 0 90px;
 
     @include media("<=1315px") {
-        padding: 60px $wrap_edge 30px;
+        padding: 60px $wrap_edge 90px;
     }
 
 
